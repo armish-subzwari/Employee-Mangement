@@ -27,7 +27,7 @@ void MainWindow::btnFun()
     QString desig[]={"CEO","Co.CEO","Manager","IT Employee","Clerk"};
     QString user= ui->lineEdit->text();
     bool found= false;
-    for(int i=0;emp_id->length();i++)
+    for(int i=0;emp_id->size();i++)
     {
         if(user==emp_id[i]){
             found=true;
@@ -37,11 +37,12 @@ void MainWindow::btnFun()
                                      " , Designation :" +desig[i]);
             break;
         }
-        if(!found){
-            QMessageBox::information(this,"Error","Sorry Invalid Employee ID");
-
-        }
+    }
+    if(!found){
+        QMessageBox::information(this,"Error","Sorry Invalid Employee ID");
 
     }
+
+
 }
 
