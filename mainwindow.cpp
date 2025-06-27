@@ -1,3 +1,5 @@
+// error on line no 31 "value stored to "found" is never read ". 
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
